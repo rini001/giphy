@@ -1,0 +1,118 @@
+{
+  "messages": [
+    {
+      "value": "hi",
+      "id": 1
+    }
+  ],
+  "gif": [
+    {
+      "value": "https://media3.giphy.com/media/GUowIfzDhLTV4Jbik1/200.gif?cid=022c47f7te8uzdxdyh7q6oj8rf16q0n19gw2tkmojwbqsci8&rid=200.gif&ct=g",
+      "id": 1
+    },
+    {
+      "value": "https://media3.giphy.com/media/GUowIfzDhLTV4Jbik1/200.gif?cid=022c47f7te8uzdxdyh7q6oj8rf16q0n19gw2tkmojwbqsci8&rid=200.gif&ct=g",
+      "id": 2
+    },
+    {
+      "value": "https://media0.giphy.com/media/ieVZ9u0R3l3mNU8jUl/200.gif?cid=022c47f7pfzkokrnuslmpfynmzar5dk1wntzq4rr8ujz36nh&rid=200.gif&ct=g",
+      "id": 3
+    },
+    {
+      "value": "https://media0.giphy.com/media/ieVZ9u0R3l3mNU8jUl/200.gif?cid=022c47f7pfzkokrnuslmpfynmzar5dk1wntzq4rr8ujz36nh&rid=200.gif&ct=g",
+      "id": 4
+    },
+    {
+      "value": "https://media0.giphy.com/media/ieVZ9u0R3l3mNU8jUl/200.gif?cid=022c47f7v6q2v3lm2ykuj9wtqpfv3ptynk5b7zgi1pa1teuk&rid=200.gif&ct=g",
+      "id": 5
+    },
+    {
+      "value": "https://media0.giphy.com/media/ieVZ9u0R3l3mNU8jUl/200.gif?cid=022c47f7v6q2v3lm2ykuj9wtqpfv3ptynk5b7zgi1pa1teuk&rid=200.gif&ct=g",
+      "id": 6
+    },
+    {
+      "value": "https://media4.giphy.com/media/uEfZWPFl4cwFuxeUt7/200.gif?cid=022c47f7v6q2v3lm2ykuj9wtqpfv3ptynk5b7zgi1pa1teuk&rid=200.gif&ct=g",
+      "id": 7
+    },
+    {
+      "value": "https://media4.giphy.com/media/jMRB9vZZVstbi/200.gif?cid=022c47f7v6q2v3lm2ykuj9wtqpfv3ptynk5b7zgi1pa1teuk&rid=200.gif&ct=g",
+      "id": 8
+    },
+    {
+      "value": "https://media3.giphy.com/media/3o6wrvdHFbwBrUFenu/200.gif?cid=022c47f7kazijedyautj7sb98vhgder5h51qydqr2eg7v2c6&rid=200.gif&ct=g",
+      "id": 9
+    },
+    {
+      "value": "https://media3.giphy.com/media/3o6wrvdHFbwBrUFenu/200.gif?cid=022c47f7kazijedyautj7sb98vhgder5h51qydqr2eg7v2c6&rid=200.gif&ct=g",
+      "id": 10
+    },
+    {
+      "value": "https://media3.giphy.com/media/3o6wrvdHFbwBrUFenu/200.gif?cid=022c47f7kazijedyautj7sb98vhgder5h51qydqr2eg7v2c6&rid=200.gif&ct=g",
+      "id": 11
+    },
+    {
+      "value": "https://media4.giphy.com/media/7oWxuWzMs8YNdAnCQl/200.gif?cid=022c47f7kazijedyautj7sb98vhgder5h51qydqr2eg7v2c6&rid=200.gif&ct=g",
+      "id": 12
+    },
+    {
+      "value": "https://media4.giphy.com/media/7oWxuWzMs8YNdAnCQl/200.gif?cid=022c47f7kazijedyautj7sb98vhgder5h51qydqr2eg7v2c6&rid=200.gif&ct=g",
+      "id": 13
+    },
+    {
+      "value": "https://media0.giphy.com/media/ieVZ9u0R3l3mNU8jUl/200.gif?cid=022c47f78auyq7f2radh3kr0etjyxnq1dczeljobl3lwrlad&rid=200.gif&ct=g",
+      "id": 14
+    },
+    {
+      "value": "https://media0.giphy.com/media/ieVZ9u0R3l3mNU8jUl/200.gif?cid=022c47f78auyq7f2radh3kr0etjyxnq1dczeljobl3lwrlad&rid=200.gif&ct=g",
+      "id": 15
+    },
+    {
+      "value": "https://media0.giphy.com/media/ieVZ9u0R3l3mNU8jUl/200.gif?cid=022c47f78auyq7f2radh3kr0etjyxnq1dczeljobl3lwrlad&rid=200.gif&ct=g",
+      "id": 16
+    },
+    {
+      "value": "https://media3.giphy.com/media/z8XtwKGIRQSBCmU4sW/200.gif?cid=022c47f78jmgtu34peyekn15tsqcw9k86dusri2lgrvnrpyh&rid=200.gif&ct=g",
+      "id": 17
+    },
+    {
+      "value": "https://media0.giphy.com/media/ieVZ9u0R3l3mNU8jUl/200.gif?cid=022c47f7h2eapawc0d85itg4z0mi6a9uo3r1qam0cx6r7e1t&rid=200.gif&ct=g",
+      "id": 18
+    },
+    {
+      "value": "https://media0.giphy.com/media/ieVZ9u0R3l3mNU8jUl/200.gif?cid=022c47f7h2eapawc0d85itg4z0mi6a9uo3r1qam0cx6r7e1t&rid=200.gif&ct=g",
+      "id": 19
+    },
+    {
+      "value": "https://media3.giphy.com/media/GUowIfzDhLTV4Jbik1/200.gif?cid=022c47f7h2eapawc0d85itg4z0mi6a9uo3r1qam0cx6r7e1t&rid=200.gif&ct=g",
+      "id": 20
+    },
+    {
+      "value": "https://media0.giphy.com/media/ieVZ9u0R3l3mNU8jUl/200.gif?cid=022c47f7h2eapawc0d85itg4z0mi6a9uo3r1qam0cx6r7e1t&rid=200.gif&ct=g",
+      "id": 21
+    },
+    {
+      "value": "https://media0.giphy.com/media/ieVZ9u0R3l3mNU8jUl/200.gif?cid=022c47f7h2eapawc0d85itg4z0mi6a9uo3r1qam0cx6r7e1t&rid=200.gif&ct=g",
+      "id": 22
+    },
+    {
+      "value": "https://media0.giphy.com/media/ieVZ9u0R3l3mNU8jUl/200.gif?cid=022c47f7h2eapawc0d85itg4z0mi6a9uo3r1qam0cx6r7e1t&rid=200.gif&ct=g",
+      "id": 23
+    },
+    {
+      "value": "https://media0.giphy.com/media/ieVZ9u0R3l3mNU8jUl/200.gif?cid=022c47f7qpiycolauxfk0eot11211cpcpi2aa44ec8p5tamk&rid=200.gif&ct=g",
+      "id": 24
+    },
+    {
+      "value": "https://media0.giphy.com/media/ieVZ9u0R3l3mNU8jUl/200.gif?cid=022c47f7qpiycolauxfk0eot11211cpcpi2aa44ec8p5tamk&rid=200.gif&ct=g",
+      "id": 25
+    },
+    {
+      "value": "https://media0.giphy.com/media/ieVZ9u0R3l3mNU8jUl/200.gif?cid=022c47f7qpiycolauxfk0eot11211cpcpi2aa44ec8p5tamk&rid=200.gif&ct=g",
+      "id": 26
+    },
+    {
+      "value": "https://media0.giphy.com/media/ieVZ9u0R3l3mNU8jUl/200.gif?cid=022c47f7qpiycolauxfk0eot11211cpcpi2aa44ec8p5tamk&rid=200.gif&ct=g",
+      "id": 27
+    }
+  ]
+}
