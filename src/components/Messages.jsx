@@ -9,8 +9,7 @@ import { GifContext } from "../contexts/GifContext";
 export const Messages = () => {
   const [value, setValue] = useState("");
   const [toggle, setToggle] = useState(false);
-  const [gifmsg] = useContext(GifContext);
-  console.log(gifmsg)
+  const { gifmsg } = useContext(GifContext);
   const handleToggle = () => {
     setToggle(!toggle);
   };
@@ -55,27 +54,45 @@ export const Messages = () => {
         getGif();
       });
   }
-  
+
   return (
     <>
-      <h2>Chat App</h2>
+      {/* Heading */}
+      <h2 style={{color:"White"}}>CHAT APP</h2>
+
+      {/* Message Box */}
       <div className={styles.box}>
+
+        {/* Display messages andgifs */}
         <div className={styles.textBox}>
-          {messages.map((el) => (
+          {messages.map((messages, i) => (
             <div
               style={{ display: "flex", columnGap: "4px", alignItems: "end" }}
               className={styles.delIcon}
+              key={i}
             >
               <DeleteIcon
                 onClick={() => {
-                  handleDeleteClick(el.id);
+                  handleDeleteClick(messages.id);
                 }}
               />
-              <div className={styles.messages}>{el.value}</div>
+              <div className={styles.msgAndGif}>
+              <div className={styles.messages}>{messages.value}</div>
+              <div className={styles.gifs} >
+                {gifmsg.map((gifs) => (
+                  <img
+                    src={gifs.url}
+                    alt="loading..."
+                    width="200px"
+                    height="200px"
+                  />
+                ))}
+              </div>
+              </div>
             </div>
           ))}
-      
         </div>
+        {/* Input Box for typing Messages */}
         <div style={{ display: "flex", columnGap: "6px", alignItems: "end" }}>
           <GifBoxOutlinedIcon className={styles.giphy} onClick={handleToggle} />
           <SendIcon className={styles.giphy} onClick={handleAdd} />
@@ -88,6 +105,8 @@ export const Messages = () => {
           />
         </div>
       </div>
+
+      {/* Giphy Box */}
       <div style={{ marginTop: "10px" }}>{toggle ? <Giphy /> : ""}</div>
     </>
   );

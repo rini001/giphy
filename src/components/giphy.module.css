@@ -12,10 +12,10 @@
   .gifBox{
     background-color: white;
     border-radius: 10px;
-    width: 13%;
+    width: fit-content;
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      
+    padding: 10px;  
   }
   .gifs{
     overflow-y: scroll;

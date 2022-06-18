@@ -10,22 +10,28 @@ export const GifProvider = ({ children }) => {
   const [isError, setIsError] = useState(false);
   const [search, setSearch] = useState("");
   const [gifmsg, setgifmsg] = useState([{}]);
-  console.log("c", gifmsg.value);
+
+  //executing getGifs (clicked)
+  useEffect(() => {
+    getGifs();
+  }, []);
+
+  //getting  gif (clicked)
   const getGifs = () => {
-    fetch(`https://message-box-backend.herokuapp.com/gif`)
+    fetch("https://message-box-backend.herokuapp.com/gif")
       .then((res) => res.json())
       .then((res) => {
-        console.log("res", res);
-        setgifmsg(...res);
+        setgifmsg(res);
       });
   };
-  const handleAdd = (value) => {
-    console.log(value, 1);
+
+  //posting gif (clicked)
+  const handleAdd = (url) => {
     const payload = {
-      value,
+      url,
     };
     const payloadjson = JSON.stringify(payload);
-    fetch(`https://message-box-backend.herokuapp.com/gif`, {
+    fetch("https://message-box-backend.herokuapp.com/gif", {
       method: "POST",
       body: payloadjson,
       headers: {
@@ -35,9 +41,10 @@ export const GifProvider = ({ children }) => {
       .then((res) => res.json())
       .then((json) => {
         getGifs();
-        console.log(json);
       });
   };
+  //--------------------------------------
+  //get trending gif (API)
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
@@ -46,10 +53,9 @@ export const GifProvider = ({ children }) => {
         const result = await axios("https://api.giphy.com/v1/gifs/trending", {
           params: {
             api_key: "59JPcIDi8MtvGmafJnVZqULxgyyXRTEA",
-            limit:100
+            limit: 100,
           },
         });
-        console.log(result);
         setData(result.data.data);
       } catch (error) {
         setIsError(true);
@@ -61,6 +67,7 @@ export const GifProvider = ({ children }) => {
     fetchData();
   }, []);
 
+  //display gifs
   const displayGifs = () => {
     if (isLoading) {
       return (
@@ -70,7 +77,7 @@ export const GifProvider = ({ children }) => {
       );
     }
     return data.map((el) => (
-      <div>
+      <div key={el.id}>
         <img
           width="200px"
           height="200px"
@@ -81,6 +88,8 @@ export const GifProvider = ({ children }) => {
       </div>
     ));
   };
+
+  //erron handling
   const errorHandler = () => {
     if (isError)
       return (
@@ -89,10 +98,13 @@ export const GifProvider = ({ children }) => {
         </div>
       );
   };
+  //--------------------------------------
+  //handle Search GIF
   const handleSearchChange = (event) => {
     setSearch(event.target.value);
   };
 
+  // handle submit GIF
   const handleSubmit = async (event) => {
     event.preventDefault();
     setIsError(false);
@@ -113,23 +125,19 @@ export const GifProvider = ({ children }) => {
     }
     setIsLoading(false);
   };
-  useEffect(() => {
-    getGifs();
-  }, []);
-console.log("down",gifmsg)
+  //--------------------------------------
   return (
     <GifContext.Provider
-      value={[
+      value={{
         search,
         errorHandler,
         handleSearchChange,
         handleSubmit,
         displayGifs,
         handleAdd,
-        gifmsg,
-        // displayUnderMessageBox,
         getGifs,
-      ]}
+        gifmsg,
+      }}
     >
       {children}
     </GifContext.Provider>

@@ -1,7 +1,6 @@
 .box {
   background-color: white;
-
-  width: 20%;
+  width: fit-content;
   height: 30rem;
   margin: auto;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
@@ -11,13 +10,12 @@
   align-items: flex-end;
   justify-content: end;
   row-gap: 20px;
-  /* border: 2px solid black; */
+  padding: 20px;
   border-radius: 20px;
 }
 .textBox {
   overflow-y: scroll;
   margin-left: 10px;
-  /* border: 2px solid black; */
   display: grid;
   width: 100%;
   justify-content:right;
@@ -29,6 +27,7 @@
   width: 8rem;
   height: 1rem;
   border-radius: 10px;
+  margin-left: auto;
   background-color: rgb(41, 105, 255);
   box-shadow: rgba(91, 91, 167, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -57,4 +56,13 @@ cursor: pointer  !important;
 }
 .giphy:hover{
   color:rgb(31, 30, 30)  !important
+}
+.msgAndGif{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.gifs{
+  display: grid;
+  row-gap: 10px;
 }
