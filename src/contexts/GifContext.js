@@ -46,7 +46,7 @@ export const GifProvider = ({ children }) => {
         const result = await axios("https://api.giphy.com/v1/gifs/trending", {
           params: {
             api_key: "59JPcIDi8MtvGmafJnVZqULxgyyXRTEA",
-            limit: 1000,
+            limit:100
           },
         });
         console.log(result);
@@ -103,7 +103,7 @@ export const GifProvider = ({ children }) => {
         params: {
           api_key: "59JPcIDi8MtvGmafJnVZqULxgyyXRTEA",
           q: search,
-          limit: 1000,
+          limit: 100,
         },
       });
       setData(results.data.data);
