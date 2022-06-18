@@ -43,6 +43,16 @@ export const GifProvider = ({ children }) => {
         getGifs();
       });
   };
+  //deleting gif from msg box
+  function handleDeleteGif(id) {
+    fetch(`https://message-box-backend.herokuapp.com/gif/${id}`, {
+      method: "DELETE",
+    })
+      .then((res) => res.json())
+      .then((json) => {
+        getGifs();
+      });
+  }
   //--------------------------------------
   //get trending gif (API)
   useEffect(() => {
@@ -137,6 +147,7 @@ export const GifProvider = ({ children }) => {
         handleAdd,
         getGifs,
         gifmsg,
+        handleDeleteGif
       }}
     >
       {children}

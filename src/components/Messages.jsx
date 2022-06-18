@@ -9,7 +9,7 @@ import { GifContext } from "../contexts/GifContext";
 export const Messages = () => {
   const [value, setValue] = useState("");
   const [toggle, setToggle] = useState(false);
-  const { gifmsg } = useContext(GifContext);
+  const { gifmsg, handleDeleteGif } = useContext(GifContext);
   const handleToggle = () => {
     setToggle(!toggle);
   };
@@ -58,12 +58,11 @@ export const Messages = () => {
   return (
     <>
       {/* Heading */}
-      <h2 style={{color:"White"}}>CHAT APP</h2>
+      <h2 style={{ color: "White" }}>CHAT APP</h2>
 
       {/* Message Box */}
       <div className={styles.box}>
-
-        {/* Display messages andgifs */}
+        {/* Display messages and gifs */}
         <div className={styles.textBox}>
           {messages.map((messages, i) => (
             <div
@@ -77,21 +76,33 @@ export const Messages = () => {
                 }}
               />
               <div className={styles.msgAndGif}>
-              <div className={styles.messages}>{messages.value}</div>
-              <div className={styles.gifs} >
-                {gifmsg.map((gifs) => (
-                  <img
-                    src={gifs.url}
-                    alt="loading..."
-                    width="200px"
-                    height="200px"
-                  />
-                ))}
-              </div>
+                <div className={styles.messages}>{messages.value}</div>
               </div>
             </div>
           ))}
+          <div className={styles.gifs}>
+            {gifmsg.map((gifs, i) => (
+              <div
+                style={{ display: "flex", columnGap: "4px", alignItems: "end" }}
+                className={styles.delIcon}
+                key={i}
+              >
+                <DeleteIcon
+                  onClick={() => {
+                    handleDeleteGif(gifs.id);
+                  }}
+                />
+                <img
+                  src={gifs.url}
+                  alt="loading..."
+                  width="200px"
+                  height="200px"
+                />
+              </div>
+            ))}
+          </div>
         </div>
+
         {/* Input Box for typing Messages */}
         <div style={{ display: "flex", columnGap: "6px", alignItems: "end" }}>
           <GifBoxOutlinedIcon className={styles.giphy} onClick={handleToggle} />
