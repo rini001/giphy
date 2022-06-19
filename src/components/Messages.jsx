@@ -58,7 +58,7 @@ export const Messages = () => {
   return (
     <>
       {/* Heading */}
-      <h2 style={{ color: "White" }}>CHAT APP</h2>
+      {/* <h2 style={{ color: "White" }}>CHAT APP</h2> */}
 
       {/* Message Box */}
       <div className={styles.box}>

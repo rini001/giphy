@@ -87,7 +87,7 @@ export const GifProvider = ({ children }) => {
       );
     }
     return data.map((el) => (
-      <div key={el.id}>
+      <div key={el.id} style={{cursor:"pointer"}}>
         <img
           width="200px"
           height="200px"
